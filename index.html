@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Recetario de Bebidas Casero</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>El Rincón de los de prog 5to A</h1>
+        <p>Recetas sencillas, ¡hechas en casa!</p>
+    </header>
+
+    <main>
+        <section class="controles">
+            <h2>Encuentra tu Bebida</h2>
+            <input type="text" id="buscador" placeholder="Busca por nombre...">
+            <select id="filtro-categoria">
+                <option value="todos">Todas las Categorías</option>
+                </select>
+        </section>
+
+        <hr>
+
+        <section id="contenedor-recetas" class="grid-recetas">
+            <h2>Nuestras Bebidas </h2>
+            </section>
+
+        <hr>
+
+        <section id="seccion-agregar">
+            <h2> ¡Agrega tu Propia Receta!</h2>
+            <form id="formulario-agregar">
+                <label for="nombre-bebida">Nombre:</label>
+                <input type="text" id="nombre-bebida" required>
+
+                <label for="categoria-bebida">Categoría:</label>
+                <select id="categoria-bebida" required>
+                    <option value="">Selecciona una categoría</option>
+                    </select>
+                <label for="foto-bebida">URL de la Foto:</label>
+                <input type="url" id="foto-bebida" placeholder="Ej: https://ejemplo.com/foto.jpg" required>
+
+                <label for="receta-bebida">Descripción / Receta:</label>
+                <textarea id="receta-bebida" rows="5" required></textarea>
+
+                <button type="submit">Agregar Bebida</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <section class="integrantes">
+            <h2>Integrantes del Equipo</h2>
+            <ul>
+                <li>Sherlyn Alegria Acuña Zaleta</li>
+                <li>Mariela Juarez Aragon</li>
+                <li>Daries Alejandro Rivera García</li>
+                </ul>
+        </section>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
